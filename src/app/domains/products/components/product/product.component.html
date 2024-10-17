@@ -1,0 +1,14 @@
+<div class="group rounded-lg border">
+    <!-- <a href="#" class="w-full overflow-hidden rounded-t-lg bg-gray-200">
+        <img [src]="img" [alt]="title" class="h-full w-full object-cover object-center group-hover:opacity-75">
+    </a> -->
+    <div *ngFor="let user of users()" class="flex flex-col space-y-2 p-4">
+        <div class="text-lg font-medium text-gray-900">nombre : {{user.nombre}}</div>
+        <div  class="text-sm text-gray-700">correo: {{user.correo}}</div>
+        <div  class="text-sm text-gray-700">telefono: {{user.telefono}}</div>
+        <div  class="text-sm text-gray-700">ciudad: {{user.ciudad}}</div>
+        <div  class="text-sm text-gray-700">estado: {{user.estado}}</div>
+        <!-- <button class="text-black bg-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 w-full"
+            (click)="addToCartHandler()">consumir servicio</button> -->
+    </div>
+</div>
